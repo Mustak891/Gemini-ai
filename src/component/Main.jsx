@@ -169,10 +169,10 @@ const Main = () => {
               placeholder="Enter your prompt here"
               className="flex-1 bg-transparent p-3 md:text-lg outline-none"
             />
-            <div className="flex gap-3 md:text-xl">
+            <div className="flex gap-3 text-xl">
               <RiGalleryLine className="cursor-pointer hidden md:block" />
               <CiCirclePlus onClick={() => homePage()} className="cursor-pointer block md:hidden" />
-              <TiMicrophoneOutline className="cursor-pointer" />
+              <TiMicrophoneOutline className="cursor-pointer hidden md:block"/>
               {input.length > 0 && !loading ? (
                 <AiOutlineSend
                   onClick={() => onSent()}
